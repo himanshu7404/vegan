@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./veg store.css">
+    <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/51b4e8f193.js" crossorigin="anonymous"></script>
+    <style>
+        
+        
+       
+        input[type=text], input[type=password] {
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          box-sizing: border-box;
+        }
+        
+       
+       #login {
+            background-color: rgb(170,210,54);
+      color:white;
+      font-size:12px;
+      font-weight:600;
+      padding:9px 34px;
+      border:0px;
+      border-radius: 4px;
+      margin-left: 14px;
+      width:135px;
+        }
+        
+        button:hover {
+          opacity: 0.8;
+        }
+        
+        .cancelbtn {
+          width: auto;
+          padding: 10px 18px;
+          background-color: #f44336;
+        }
+        
+       
+        .imgcontainer {
+          text-align: center;
+          margin: 24px 0 12px 0;
+          position: relative;
+        }
+        
+        img.avatar {
+          width: 40%;
+          border-radius: 50%;
+        }
+        
+        .container {
+          padding: 16px;
+        }
+        
+        span.psw {
+          float: right;
+          padding-top: 16px;
+        }
+        
+        .modal {
+          display: none; 
+          position: fixed; 
+          z-index: 1;
+          left: 0;
+          top: 0;
+          width: 100%; 
+          height: 100%; 
+          overflow: auto; 
+          background-color: rgb(0,0,0); 
+          background-color: rgba(0,0,0,0.4); 
+          padding-top: 60px;
+        }
+        
+        
+        .modal-content {
+          background-color: #fefefe;
+          margin: 5% auto 15% auto; 
+          border: 1px solid #888;
+          width: 80%; 
+        }
+        
+      
+        .close {
+          position: absolute;
+          right: 25px;
+          top: 0;
+          color: #000;
+          font-size: 35px;
+          font-weight: bold;
+        }
+        
+        .close:hover,
+        .close:focus {
+          color: red;
+          cursor: pointer;
+        }
+        
+      
+        .animate {
+          -webkit-animation: animatezoom 0.6s;
+          animation: animatezoom 0.6s
+        }
+        
+        @-webkit-keyframes animatezoom {
+          from {-webkit-transform: scale(0)} 
+          to {-webkit-transform: scale(1)}
+        }
+          
+        @keyframes animatezoom {
+          from {transform: scale(0)} 
+          to {transform: scale(1)}
+        }
+        
+       
+        @media screen and (max-width: 300px) {
+          span.psw {
+             display: block;
+             float: none;
+          }
+          .cancelbtn {
+             width: 100%;
+          }
+        }
+        </style>
+</head>
+
+<body>
+    <nav id="nav-bar"><img id="logo" src="https://mobirise.com/extensions/organicamp/assets/images/logo1.jpg">
+      <div>
+        <div id="menu-items">
+        <span class="dropdown-wrapper">
+        <a>Demo Pages<i class="fas fa-sort-down"></i></a>
+        <div class="dropdown">
+    
+            <a>Menu Item1</a>
+            <a>Menu Item2</a>
+            <a>Menu Item3</a>
+        </div>
+        </span>
+        
+            <a>Watch Video</a>
+                <a>Blogs<i class="fas fa-sort-down"></i></a>
+    </div>
+        <a href="payment.html"><button  id="buy-btn">BUY NOW</button></a>
+        <button id="login" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+
+var modal = document.getElementById('id01');
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+    <div>
+    
+</nav>
+    <main>
+        <section id="landing-section">
+      
+      <div id="main-text">   
+      <h1>Vegan Store Simple Website Template</h1>
+          <p>With nutrition, all the vital functions of the body are connected. It is the source of the development of tissues and cells, their constant renewal, the saturation of man with energy.</p>
+        </div>
+        </section>
+        
+        <section id="steps">
+            <div id="step-1">
+                <div>
+                <i   class="fas fa-cut"></i></div>
+                <h3>Step 01.</h3>
+                <p>Vegetables are an integral part of the human diet. They are extremely useful because of the high content of carbohydrates, various acids, vitamins and active elements in the form, easy for digestion.</p>
+                
+                
+            </div>
+       
+       
+            <div id="step-2"><div>
+                <i   class="fas fa-paint-brush"></i>
+                </div>
+                <h3>Step 02.</h3>
+                <p>Fresh tomatoes are ideal for replenishing the loss of minerals. These vegetables contain a lot of acids that our body needs for full-fledged work.</p>
+            </div>
+                
+            <div id="step-3">
+               <div>
+                <i class="fas fa-shopping-bag"></i>
+                </div>
+                <h3>Step 03.</h3> 
+                <p>In the content of vitamin C, sweet peppers are superior to lemons and even black currants! The greatest amount of vitamin is contained around the stalk, that is, in the part of the product that is usually cut during cleaning.</p>
+            </div>
+
+      
+        
+            <div id="step-4">
+                <div>
+                <i class="fas fa-smile"></i>
+                </div>
+                <h3>Step 04.</h3>
+                <p>If you sometimes eat hot chili peppers, this will help normalize cerebral circulation, ease the condition with bronchial asthma, cough, sore throat, flu.</p>
+                
+            </div>
+        </section>
+        <section id="store-section">
+            <p class="freash-food-heading">Freash Food</p>
+            <h3 style="font-size: 44px;">Our Vegan Store!</h3>
+            <p class="store-dis">Radish contains a lot of fiber, pectin and mineral salts.</p>
+            <div id="store-item-wrapper">
+                <div class="store-item">
+                    <div class="icon-wrapper">
+                        <i   class="fas fa-camera"></i>
+                    </div>
+                        <h3>Freash Vegetables</h3>
+                        <p>Use for cooking several types of vegetable oil.</p>
+
+                    
+                </div>
+
+                <div class="store-item">
+                    <div class="icon-wrapper">
+                        <i   class="fas fa-rocket"></i>
+                    </div>
+                    <h3>High Quality</h3>
+                    <p>This is the best source of essential fatty acids for the body.</p>
+                </div>
+                <div class="store-item">
+                    <div class="icon-wrapper">
+                        <i   class="fab fa-twitter"></i>
+                    </div>
+                    <h3>Sale</h3>
+                    <p>It is very good, if in the kitchen there will always be several bottles with different oils.</p>
+                </div>
+                <div class="store-item">
+                    <div class="icon-wrapper">
+                        <i class="fab fa-weixin"></i>
+                    </div>
+                    <h3>Best Price</h3>
+                    <p>Remember that unrefined oils are not suitable for heat treatment.</p>
+                </div>
+            </div>
+        </section>
+        <section id="testimonials-section">
+            <p class="freash-food-heading">Freash Food</p>
+            <h3>Our Vegan Shop!</h3>
+            <p class="store-dis">According to experts, any habit can be formed in 21 days. The same statement applies to healthy eating.</p>
+        <div id="testimonials-wrapper">
+            <div class="testimonial-item">
+                <img src="https://mobirise.com/extensions/organicamp/assets/images/face5.jpg">
+                <p class="testimonial-message">Sales consultants are very polite. Many of the products have tried and are ready to prompt and recommend to customers. The staff shows that they completely share the philosophy of proper nutrition, if you can say so.</p>
+                <h3 class="testimonial-by">VERONICA KING</h3>
+                <p class="job-role">Cook</p>
+            </div>
+        
+       
+            <div class="testimonial-item">
+                <img src="https://mobirise.com/extensions/organicamp/assets/images/face6.jpg">
+                <p class="testimonial-message">SThe assortment is very wide. From useful organic oils, cereals and teas to specific products for vegetarians, such as sausages and pies without meat.</p>
+
+                <h3 class="testimonial-by">JIM CASH</h3>
+                <p class="job-role">Seller</p>
+            </div>
+        
+      
+            <div class="testimonial-item">
+                <img src="https://mobirise.com/extensions/organicamp/assets/images/face7.jpg">
+                <p class="testimonial-message">I want to say a huge thank you to the management of the store and all its employees, I'm not a vegetarian, it would seem that the store is not for me, but it's not so, any person who comes here will find something useful.</p>
+                <h3 class="testimonial-by">PETER GOODMAN</h3>
+                <p class="job-role">Manager</p>
+            </div>
+        </div>
+        </section>
+        <section id="follow-page">
+           <div id="left-section"><img src="https://mobirise.com/extensions/organicamp/assets/images/19.jpg"></div>
+          <div id="right-section">
+           <div id="follow-us">
+              <h3>Follow Us</h3>
+              <p>A wide range of products; many unusual and tasty products; courteous staff.</p>
+          <input id="subscribe-mail" placeholder="Your Email">
+          <input id="subscribe-btn" type="submit" value="Subscribe">
+         </div>
+            </div>
+        </section>
+        <section id="stats">
+            <div id="stats-wrapper">
+                <div class="stats-item">
+                    <h3>7</h3>
+                    <p>Years of experiences</p>
+                </div>
+                <div class="stats-item">
+                    <h3>123k</h3>
+                    <p>Happy Customers</p>
+                </div>
+                <div class="stats-item">
+                    <h3>72k</h3>
+                    <p>100% Satisfaction</p>
+                </div>
+                <div class="stats-item">
+                    <h3>13k</h3>
+                    <p>Detox Smoothies</p>
+                </div>
+            </div>
+        </section>
+        <section id="video-section">
+            <div>
+                <h3>Vimeo Video
+                </h3></div>
+                <div id="line-seprator"></div>
+              <div>  <iframe frameborder="0" allowfullscreen src="https://player.vimeo.com/video/275412279"></iframe>
+         </div>   
+
+        </section>
+        <section id="address-section">
+            <div id="address-wrapper">
+                <p class="freash-food-heading">Contact Us</p>
+                <h3 >Address Information</h3>
+                <p>Overeating is one of the most common causes of overweight and digestive problems.</p>
+                <h4>London Store</h4>
+                <p class="address-lines">Roeterseiland Campus Building E <br />6th floor London<br />Monday to Friday:9am to 8pm<br />examplemail.com</p>
+            <h4>Berlin Store</h4>
+            <p class="address-lines">Roeterseiland Campus Building E <br />6th floor London<br />Monday to Friday:9am to 8pm<br />examplemail.com</p>
+            </div>
+            <div>
+                <p class="freash-food-heading">Meet Our Team</p>
+                <h3>Get In Touch</h3>
+                <p>The task of proper nutrition - to remove from the diet harmful food and enrich it useful.</p>
+           <form>
+               <input class="input-box" type="text" name="name" placeholder="Name">
+               <input class="input-box" type="text" name="phone" placeholder="Phone">
+               <input class="input-box" type="text" name="subject" placeholder="Subject">
+               <input class="input-box" type="email" name="email" placeholder="E-Mail">
+               <textarea class="input-box">Message</textarea>
+             <input id="btn-submit" class="primary-button" type="submit" value="Submit Now">
+
+          
+           </form>
+            </div>
+        </section>
+    </main>
+            <footer>
+             Designed by 
+            </footer>
+
+      
+      
+    
+</body>
+</html>
